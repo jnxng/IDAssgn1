@@ -3,7 +3,9 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background-color: #24252A;
+}
+.bg{
+    background-color: #514e4e;
 }
 
 li,a,button{
@@ -18,7 +20,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 10px 10%;
+    background-color: #24252A;
 }
 
 .logo{
@@ -31,8 +34,9 @@ header{
 
 nav{
     order: 1;
+    background-color: #24252A;
 }
-.nav_links{
+.nav_links ul{
     list-style: none;
 }
 
@@ -65,4 +69,29 @@ button{
 
 button:hover{
     background-color: rgba(0,136,169,0.8);
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.flex-container>div{
+    color: yellow;
+    font-size: 40px;
+    font-family: "Montserrat",sans-serif;
+    width: 700px;
+    height: auto;
+    flex-wrap: wrap;
+    margin: 50px;
+    margin-left: 150px;
+    margin-right: 50px;
+    padding: 0;
+    
+}
+.ca{
+    display: block;
+    margin-top: 50px;
+    margin-left: 40px;
+    margin-right: auto;
 }
