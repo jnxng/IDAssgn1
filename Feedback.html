@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" async></script>
 </head>
 <body class="bg">
     <header>
@@ -20,19 +21,33 @@
         <a class="cta" href="Feedback.html"><button>Feedback</button></a>
     </header>
     <div class="container">
-        <div class="textbox">
-            <label>Username:<br>
-                <input type="text" placeholder="Username" size="50" required><br>
-            </label>
-            <label>Age:<br>
-                <input type="number" placeholder="Age" size="50"><br>
-            </label>
-            <label>Password:<br>
-                <input type="text" placeholder="Password" size="50" required><br>
-            </label>
-            <label>Comment:</label><br>
-            <input type="text" class="commentbox">
-        </div>
+        <form class="form" onsubmit="addFeedback(event)">
+            <div class="textbox">
+                <label>First Name:
+                    <input type="text" id="fn" placeholder="First Name" size="50" required><br>
+                </label>
+                <label>Last Name:
+                    <input type="text" id="ln" placeholder="Last name" size="50" required><br>
+                </label><br>
+            </div>
+            <div>
+                <label>Age:
+                    <input type="number" id="age" placeholder="Age" size="25"><br>
+                </label><br>
+            </div>
+            <div>
+                <label>Gender:</label>
+                <input type="radio" id="gender"  required value="male">
+                <label for="male">Male</label>
+                <input type="radio" value="female">
+                <label for="female">Female</label><br><br>
+            </div>
+            <div>
+                <label>Comment:</label><br>
+                <input type="text" class="commentbox" placeholder="Type your comment here" required>
+            </div><br>
+            <button>Submit</button>
+        </form>
     </div>
 </body>
 </html>
