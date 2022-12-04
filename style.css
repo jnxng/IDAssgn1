@@ -174,3 +174,62 @@ button:hover{
     color: #edf0f1;
     text-decoration: none;
 }
+
+.about-container1{
+    display: flex;
+    justify-content: space-between;
+}
+.about-container1>ul{
+    align-items: center;
+}
+.about-container1>ul>li{
+    display: flex;
+    font-family: "Montserrat",sans-serif;
+    color: #f1c232;
+    text-align: start;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 30px 10px 0px 50px;
+    font-size: 40px;
+}
+
+.about-container1>img{
+    width: 600px;
+    height: 600px;
+    border: solid 5px;
+}
+
+.about-container2{
+    display: flex;
+
+}
+
+.about-container2>img{
+    width: 600px;
+    height: 600px;
+    border: solid 5px;
+    object-fit: cover;
+}
+
+.about-container2>div{
+    color: #f1c232;
+    font-family: "Montserrat",sans-serif;
+    margin-left: 100px;
+
+}
+.about-container2>div>p{
+    font-size: 45px;
+}
+.about-container2>div>ol>li{
+    font-size: 40px;
+}
+.about-container2>div>div{
+    margin-top: 20px;
+}
+.about-container2>div>div>p{
+    font-size: 45px;
+}
+.about-container2>div>div>p>a{
+    font-size: 45px;
+    color: red;
+}

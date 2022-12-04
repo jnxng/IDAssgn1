@@ -37,16 +37,16 @@
             </div>
             <div>
                 <label>Gender:</label>
-                <input type="radio" id="gender"  required value="male">
+                <input name = "grp1" type="radio" id="gender1"  required value="male">
                 <label for="male">Male</label>
-                <input type="radio" value="female">
+                <input name="grp1" id="gender2" type="radio" value="female">
                 <label for="female">Female</label><br><br>
             </div>
             <div>
                 <label>Comment:</label><br>
                 <input type="text" class="commentbox" placeholder="Type your comment here" required>
             </div><br>
-            <button>Submit</button>
+            <button onclick="addFeedback">Submit</button>
         </form>
     </div>
 </body>

@@ -47,10 +47,18 @@ function addFeedback(event){
     var first_name = document.getElementById("fn");
     var last_name = document.getElementById("ln");
     var age = document.getElementById("age");
-    var gender = document.getElementById("gender");
+    var gender1 = document.getElementById("gender1");
+    var gender2 = document.getElementById("gender2");
     var comment = document.getElementById("comment");
 
-    temp_gender.checked ? gender = "Male" : gender = "Female";
+    if(gender1.checked == true){
+        gender = "Male"
+    }
+    else if(gender2.checked == true){
+        gender = "Female"
+    }
+
+
 
     localStorage.setItem("Is_first_name", first_name);
     localStorage.setItem("Is_last_name", last_name);
@@ -66,13 +74,3 @@ function addFeedback(event){
 
 
 
-
-// function Feedback(fn,ln,age,gender,comment){
-//     this.fn= fn
-//     this.ln = ln
-//     this.age = age
-//     this.gender = gender
-//     this.comment = comment
-
-//     this.
-// }
